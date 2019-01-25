@@ -3,10 +3,10 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 Pod::Spec.new do |s|
-  name = "TwitterText"
+  name = "twitter-text"
   version = "3.0.0"
-  url = "https://github.com/bufferapp/twitter-text"
-  git_url = "https://github.com/bufferapp/twitter-text.git"
+  url = "https://github.com/twitter/#{name}"
+  git_url = "#{url}.git"
   tag = "v#{version}"
 
   s.name = name
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'objc/lib/TwitterText.h', 'objc/lib/TwitterTextEntity.h'
   s.header_mappings_dir = 'objc'
   s.resources = 'config/v*.json'
+  s.module_name = "TwitterText"
 
   s.author = { "Twitter, Inc." => "opensource@twitter.com" }
   s.ios.deployment_target = "9.0"
