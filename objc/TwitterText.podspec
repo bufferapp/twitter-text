@@ -3,7 +3,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 Pod::Spec.new do |s|
-  name = "twitter-text"
+  name = "TwitterText"
   version = "3.0.0"
   url = "https://github.com/twitter/#{name}"
   git_url = "#{url}.git"
